@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>CATEQUESE</title>
+</head>
+<body class="cor">
+ <img class="logo" src="./img/pedro3.jpg" style="width: 220px; height: 220px; border-radius: 50%"> 
+
+  <h3>INSCRIÇÃO PARA CATEQUESE 2023</h3><br>
+  <form class="form1" name="Cadastro" action="" method="POST">
+    <label class="titulos"><strong>Nome completo catequisando:</strong></label>
+    <br>
+    <input type="text" name="nome" size="30"><br>
+    <br>
+    <label class="titulos"><strong>E-mail:</strong></label>
+    <br>
+    <input type="text" name="email" size="45"><br>
+    <br>
+    <label class="titulos"><strong>Para qual turma de catequese deseja se inscrever ?</strong></label>
+    <br>
+    <select name="turma">
+      <option value="Pré-catequese">Catequese infantil  - pré catequese (5-8 anos)</option>
+      <option value="Eucaristia">Catequese com crianças  - Eucaristia (9-13 anos)</option>
+      <option value="Perseverança">Catequese com adolescentes Perseverança</option>
+      <option value="Catequese com jovens">CatequeseCatequese com jovens - Crisma (14-17 anos)</option>
+      <option value="Catequese com adultos">Catequese com adultos ( a partir de 18 anos)</option>
+      
+    </select><br>
+    <br>
+    <label class="titulos"><strong>Em qual comunidade deseja fazer a catequese?</strong></label>
+    <br>
+    <select name="comunidade">
+      <option value="Matriz São Pedro">Matriz São Pedro</option>
+      <option value="Santa Edwiges">Santa Edwiges</option>
+      <option value="Sagrada Família">Sagrada Família</option>
+      <option value="NS Aparecida">NS Aparecida</option>
+      <option value="Divino">Divino</option>
+      <option value="Fátima">Fátima</option>
+      <option value="Odilia">Odilia</option>
+      <option value="São Migule">São Migule</option>
+      <option value="Sebastião">Sebastião</option>
+      <option value="Imaculada">Imaculada</option>
+    </select><br>
+    <br>
+    <label class="titulos_dia"><strong>Qual dia e horário de sua preferência para fazer catequese?</strong></label>
+    <br>
+    <input type="text" name="dia" size="30"><br>
+    </select>
+    <br>
+    <label class="titulos"><strong><strong>É batizado na igreja católica?</strong></label>
+    <br>
+    <select name="batizado">
+      <option value="sim">SIM</option>
+      <option value="nao">NÂO</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <input id="inp_enviar"type="submit" name="enviar" value="Enviar">
+    <br>
+  </form>
+  <br>
+
+<h1 class="titulo_cat">Consultar inscritos</h1>
+<form class="catequese" method="POST" action="">
+    Pesquisar:<input type="text" name="pesquisar" placeholder="PESQUISAR">
+    <input type="submit" value="ENVIAR">
+</form>
+
+<style>
+
+.logo {
+  position: relative;
+  left: 90px;
+  top: 8px;
+}
+
+.cor{
+  background: hsl(36, 96%, 56%); 
+}
+
+.titulos {
+  font-size: 21px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.titulos_dia {
+  font-size: 18px;
+}
+
+#inp_enviar {
+  font-size: 20px;
+  width: 87px;
+  height: 35px;
+  border-radius: 12%;
+}
+  
+</style>
+</body>
+</html>
+
